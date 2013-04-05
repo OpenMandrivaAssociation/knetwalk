@@ -1,5 +1,5 @@
 Name:		knetwalk
-Version:	4.10.1
+Version:	4.10.2
 Release:	1
 Epoch:		1
 Summary:	Turn the board pieces to get all computers connected
@@ -34,6 +34,9 @@ build, a highscore-list comes up where competitions can be fought out.
 %makeinstall_std -C build
 
 %changelog
+* Wed Apr 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.2-1
+- New version 4.10.2
+
 * Sat Mar 09 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.1-1
 - New version 4.10.1
 
