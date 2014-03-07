@@ -1,13 +1,14 @@
+Summary:	Turn the board pieces to get all computers connected
 Name:		knetwalk
 Version:	4.12.3
-Release:	1
+Release:	2
 Epoch:		1
-Summary:	Turn the board pieces to get all computers connected
+License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
-License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/knetwalk/
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Url:		http://www.kde.org/applications/games/knetwalk/
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
+Requires:	libkdegames-corebindings
 
 %description
 KNetWalk is a small game where you have to build up a computer network by
@@ -34,6 +35,9 @@ build, a highscore-list comes up where competitions can be fought out.
 %makeinstall_std -C build
 
 %changelog
+* Fri Mar 07 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.3-2
+- Requires libkdegames-corebindings
+
 * Tue Mar 04 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.3-1
 - New version 4.12.3
 
