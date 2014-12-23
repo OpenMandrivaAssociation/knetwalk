@@ -1,12 +1,12 @@
 Summary:	Turn the board pieces to get all computers connected
 Name:		knetwalk
-Version:	14.12.0
+Version:	4.14.3
 Release:	1
 Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/games/knetwalk/
-Source0:	ftp://ftp.kde.org/pub/kde/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 Requires:	libkdegames-corebindings
 
