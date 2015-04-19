@@ -1,6 +1,6 @@
 Summary:	Turn the board pieces to get all computers connected
 Name:		knetwalk
-Version:	14.12.0
+Version:	15.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
