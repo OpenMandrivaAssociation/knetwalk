@@ -1,7 +1,7 @@
 Summary:	Turn the board pieces to get all computers connected
 Name:		knetwalk
-Version:	15.08.0
-Release:	2
+Version:	15.08.1
+Release:	1
 Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
@@ -11,6 +11,18 @@ BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KDEGames)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5WidgetsAddons)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5GuiAddons)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5ItemViews)
+BuildRequires:	cmake(KF5IconThemes)
+BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5NotifyConfig)
 
 %description
 KNetWalk is a small game where you have to build up a computer network by
