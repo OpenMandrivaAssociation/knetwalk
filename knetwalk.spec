@@ -1,6 +1,6 @@
 Summary:	Turn the board pieces to get all computers connected
 Name:		knetwalk
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
@@ -31,13 +31,12 @@ KNetWalk is a small game where you have to build up a computer network by
 rotating the wires to connect the terminals to the server. When the network is
 build, a highscore-list comes up where competitions can be fought out.
 
-%files
+%files -f %{name}.lang
 %{_bindir}/knetwalk
 %{_datadir}/applications/org.kde.knetwalk.desktop
 %{_datadir}/knetwalk
 %{_iconsdir}/hicolor/*/apps/knetwalk.*
 %{_datadir}/kxmlgui5/knetwalk
-%doc %{_docdir}/*/*/knetwalk
 
 #------------------------------------------------------------------------------
 
@@ -50,3 +49,4 @@ build, a highscore-list comes up where competitions can be fought out.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-html
