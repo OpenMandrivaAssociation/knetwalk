@@ -1,3 +1,4 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Turn the board pieces to get all computers connected
 Name:		knetwalk
 Version:	17.04.0
@@ -6,7 +7,7 @@ Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		http://www.kde.org/applications/games/knetwalk/
-Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
