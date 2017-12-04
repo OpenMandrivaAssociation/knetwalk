@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Turn the board pieces to get all computers connected
 Name:		knetwalk
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Epoch:		1
 License:	GPLv2+ and LGPLv2+ and GFDL
@@ -37,7 +37,6 @@ build, a highscore-list comes up where competitions can be fought out.
 %{_datadir}/applications/org.kde.knetwalk.desktop
 %{_datadir}/knetwalk
 %{_iconsdir}/hicolor/*/apps/knetwalk.*
-%{_datadir}/kxmlgui5/knetwalk
 
 #------------------------------------------------------------------------------
 
