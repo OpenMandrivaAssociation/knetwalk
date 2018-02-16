@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   knetwalk-17.12.1.tar.xz: f052571157c8572ada61339f7d34e9676f7283d2
+sources:
+  knetwalk-17.12.2.tar.xz: 6b83282db5da5a190f5971a58b5127cb7e2d29d1
