@@ -11,6 +11,10 @@ Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5Qml)
+BuildRequires:	cmake(Qt5Quick)
+BuildRequires:	cmake(Qt5Test)
 BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(KF5CoreAddons)
 BuildRequires:	cmake(KF5Config)
@@ -26,6 +30,7 @@ BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5KIO)
 BuildRequires:	cmake(KF5NotifyConfig)
 BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake(KF5TextWidgets)
 
 %description
 KNetWalk is a small game where you have to build up a computer network by
