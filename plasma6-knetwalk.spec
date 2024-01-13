@@ -2,11 +2,11 @@
 Summary:	Turn the board pieces to get all computers connected
 Name:		plasma6-knetwalk
 Version:	24.01.90
-Release:	2
+Release:	1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
-Url:		http://www.kde.org/applications/games/knetwalk/
-Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/knetwalk-%{version}.tar.xz
+Url:		https://www.kde.org/applications/games/knetwalk/
+Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/knetwalk-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
@@ -14,6 +14,11 @@ BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Qt6Qml)
 BuildRequires:	cmake(Qt6Quick)
 BuildRequires:	cmake(Qt6Test)
+BuildRequires:	cmake(Qt6QuickWidgets)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
+BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:	cmake(KDEGames6)
 BuildRequires:	cmake(KF6CoreAddons)
 BuildRequires:	cmake(KF6Config)
