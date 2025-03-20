@@ -5,7 +5,7 @@
 Summary:	Turn the board pieces to get all computers connected
 Name:		plasma6-knetwalk
 Version:	24.12.3
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
 Url:		https://www.kde.org/applications/games/knetwalk/
