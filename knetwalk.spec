@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Summary:	Turn the board pieces to get all computers connected
 Name:		knetwalk
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+ and LGPLv2+ and GFDL
 Group:		Graphical desktop/KDE
@@ -43,29 +43,19 @@ BuildRequires:	cmake(KF6NotifyConfig)
 BuildRequires:	cmake(KF6Crash)
 BuildRequires:	cmake(KF6TextWidgets)
 
+%rename plasma6-knetwalk
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KNetWalk is a small game where you have to build up a computer network by
 rotating the wires to connect the terminals to the server. When the network is
 build, a highscore-list comes up where competitions can be fought out.
 
-%files -f knetwalk.lang
+%files -f %{name}.lang
 %{_bindir}/knetwalk
 %{_datadir}/applications/org.kde.knetwalk.desktop
 %{_datadir}/knetwalk
 %{_iconsdir}/hicolor/*/apps/knetwalk.*
 %{_datadir}/metainfo/org.kde.knetwalk.appdata.xml
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n knetwalk-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang knetwalk --with-html
